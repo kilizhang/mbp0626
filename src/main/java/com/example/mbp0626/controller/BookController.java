@@ -70,13 +70,13 @@ public class BookController {
         return map;
     }
 
-    @Cacheable(key="#id")
-    @RequestMapping("/{id}")
-    public Book getBookById(@PathVariable("id") Integer id){
-        Book book = bookService.getById(id);
-        System.out.println(book);
-        return book;
-    }
+//    @Cacheable(key="#id")
+//    @RequestMapping("/{id}")
+//    public Book getBookById(@PathVariable("id") Integer id){
+//        Book book = bookService.getById(id);
+//        System.out.println(book);
+//        return book;
+//    }
 
     @Cacheable(key="#name")
     @RequestMapping("/sbbn/{name}")
